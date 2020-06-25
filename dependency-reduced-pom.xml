@@ -13,6 +13,13 @@
           <include>**/*</include>
         </includes>
       </resource>
+      <resource>
+        <targetPath>Lib/src</targetPath>
+        <directory>${basedir}/src</directory>
+        <includes>
+          <include>**/*.py</include>
+        </includes>
+      </resource>
     </resources>
     <plugins>
       <plugin>

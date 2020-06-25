@@ -95,6 +95,14 @@
                 </includes>
                 <filtering>false</filtering>
             </resource>
+            <resource>
+                <directory>${basedir}/src</directory>
+                <targetPath>Lib/src</targetPath>
+                <includes>
+                    <include>**/*.py</include>
+                </includes>
+                <filtering>false</filtering>
+            </resource>
         </resources>
 
 
