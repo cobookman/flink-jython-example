@@ -93,7 +93,7 @@ public class BasicStreamingJob {
         @Override
         public void flatMap(String s, Collector<String> collector) throws Exception {
             PyObject out = this.handler.__call__(new PyString(s));
-            collector.collect(out.toString());
+            collector.collect(out.toString().replace("\n", " "));
         }
     }
 
